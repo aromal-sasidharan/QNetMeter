@@ -1,12 +1,13 @@
 #include "qnetmeterwindow.h"
 #include <QApplication>
-#include <core/sample.h>
+#include <core/networkutils.h>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    Sample::printMe();
+    qDebug()<<"active interfaces are \n"<<NetworkUtils::getActiveInterfaces();
     QNetMeterWindow w;
     w.show();
 

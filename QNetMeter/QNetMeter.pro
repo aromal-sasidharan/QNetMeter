@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui\
+            network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,9 +15,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         qnetmeterwindow.cpp\
-        core/sample.cpp
+    core/networkutils.cpp
 
 HEADERS  += qnetmeterwindow.h \
-    core/sample.h
+    core/networkutils.h
 
 FORMS    += qnetmeterwindow.ui
+
+OTHER_FILES +=
