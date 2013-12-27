@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        qnetmeterwindow.cpp
+        qnetmeterwindow.cpp\
+        core/sample.cpp
 
-HEADERS  += qnetmeterwindow.h
+HEADERS  += qnetmeterwindow.h \
+    core/sample.h
 
 FORMS    += qnetmeterwindow.ui
